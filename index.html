@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,18 @@
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <div class="app flex">
     <div class="menu has-scroll">
-      <div class="menu__header">Header is here</div>
+      <div class="menu__header">
+        <h1>Catch</h1>
+        <span class="header__little">of the</span>
+        <h1>Day</h1>
+        <div class="header__subheader">
+          <h2>Fresh Seafood Market</h2>
+        </div>
+      </div>
       <!-- Items -->
       <div class="menu__item flex">
         <div class="menu__img inline">
@@ -65,9 +74,9 @@
       <h2 class="title">Inventory</h2>
       <div class="inventory__item bigger-border">
         <div class="inventory__top-row flex">
-            <input class="inventory__name input padded inline lesser-border" placeholder="Fish name" />
-            <input class="inventory__price input padded inline lesser-border" placeholder="Fish price" />
-            <input class="inventory__status input padded inline lesser-border" placeholder="Fish status" />
+          <input class="inventory__name input padded inline lesser-border" placeholder="Fish name" />
+          <input class="inventory__price input padded inline lesser-border" placeholder="Fish price" />
+          <input class="inventory__status input padded inline lesser-border" placeholder="Fish status" />
         </div>
         <textarea class="inventory__desc padded lesser-border input" placeholder="Fish Desc"></textarea>
         <input class="inventory__path input padded inline lesser-border" placeholder="Fish Image" />
@@ -82,4 +91,5 @@
     </div>
   </div>
 </body>
+
 </html>
