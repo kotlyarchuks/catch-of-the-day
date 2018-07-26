@@ -9,21 +9,75 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app">
-    <div class="menu">
-      <div class="menu__header"></div>
-      <div class="menu__item"></div>
-      <div class="menu__item"></div>
-      <div class="menu__item"></div>
+  <div class="app flex">
+    <div class="menu has-scroll">
+      <div class="menu__header">Header is here</div>
+      <!-- Items -->
+      <div class="menu__item flex">
+        <div class="menu__img inline">
+          <img src="./images/test.jpg" alt="">
+        </div>
+        <div class="menu__content inline">
+          <div class="menu__product-header flex">
+            <h3 class="menu__title inline">Title</h3>
+            <span class="menu__price inline">Price</span>
+          </div>
+          <div class="menu_desc">Desc Desc Desc Desc Desc</div>
+          <div class="menu__btn">
+            <button class="btn">Add to order</button>
+          </div>
+        </div>
+      </div>
+      <!-- End item -->
+      <div class="menu__item flex">
+        <div class="menu__img inline">
+          <img src="./images/test.jpg" alt="">
+        </div>
+        <div class="menu__content inline">
+          <h3 class="menu__title inline">Title</h3>
+          <div class="menu__price inline">Price</div>
+          <div class="menu_desc">Desc Desc Desc Desc Desc</div>
+          <div class="menu__btn">
+            <button class="btn">Add to order</button>
+          </div>
+        </div>
+      </div>
+      <!-- End item -->
+      <div class="menu__item flex">
+        <div class="menu__img inline">
+          <img src="./images/test.jpg" alt="">
+        </div>
+        <div class="menu__content inline">
+          <h3 class="menu__title inline">Title</h3>
+          <div class="menu__price inline">17.24</div>
+          <div class="menu_desc">Desc Desc Desc Desc Desc</div>
+          <div class="menu__btn">
+            <button class="btn">Add to order</button>
+          </div>
+        </div>
+      </div>
+      <!-- End item -->
     </div>
-    <div class="order">
+    <div class="order has-scroll">
       <h2 class="title">Your order</h2>
     </div>
-    <div class="inventory">
+    <div class="inventory has-scroll">
       <h2 class="title">Inventory</h2>
-      <div class="inventory__item"></div>
-      <div class="inventory__item"></div>
-      <div class="inventory__item"></div>
+      <div class="inventory__item bigger-border">
+        <div class="inventory__top-row flex">
+            <input class="inventory__name input padded inline lesser-border" placeholder="Fish name" />
+            <input class="inventory__price input padded inline lesser-border" placeholder="Fish price" />
+            <input class="inventory__status input padded inline lesser-border" placeholder="Fish status" />
+        </div>
+        <textarea class="inventory__desc padded lesser-border input" placeholder="Fish Desc"></textarea>
+        <input class="inventory__path input padded inline lesser-border" placeholder="Fish Image" />
+        <div class="inventory__button lesser-border">
+          <button class="btn remove-fish padded">Remove fish</button>
+        </div>
+      </div>
+      <!-- <div class="inventory__item"></div>
+      <div class="inventory__item"></div> -->
+      <br>
       <button class="btn">Load sample fishes</button>
     </div>
   </div>
