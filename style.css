@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.app > * {
+  border: 1px solid black;
+}
+
+.app {
+  display: flex;
+  height: 90vh;
+  margin: 5vh 0;
+}
+
+.menu {
+  width: 40%;
+}
+
+.order {
+  width: 20%;
+}
+
+.inventory {
+  width: 40%;
+}
