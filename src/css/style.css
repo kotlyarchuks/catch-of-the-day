@@ -131,7 +131,7 @@ h3 {
 
 .menu__header h1:first-of-type::after {
   position: absolute;
-  content: url("./images/anchor.svg");
+  content: url("/catch-of-the-day/public/images/anchor.svg");
   width: 100px;
   top: -35px;
   right: -92px;

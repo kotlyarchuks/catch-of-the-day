@@ -7,7 +7,7 @@ class StorePicker extends Component {
   }
   render() { 
     return ( 
-      <p>I am the Store Picker!</p>
+      <p className="store-selector">I am the Store Picker</p>
      );
   }
 }

@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import StorePicker from './components/StorePicker';
+import Menu from './components/Menu';
+import Order from "./components/Order";
+import Inventory from "./components/Inventory";
 
 class App extends Component {
   render() {
     return (
-      <StorePicker />
+      <React.Fragment>
+        <Menu />
+        <Order />
+        <Inventory />
+      </React.Fragment>
     );
   }
 }
