@@ -131,7 +131,7 @@ h3 {
 
 .menu__header h1:first-of-type::after {
   position: absolute;
-  content: url("/catch-of-the-day/public/images/anchor.svg");
+  content: url("./images/anchor.svg");
   width: 100px;
   top: -35px;
   right: -92px;
@@ -142,10 +142,10 @@ h3 {
   position: absolute;
   content: "of the";
   text-transform: uppercase;
-  word-spacing: 10px;
+  word-spacing: 13px;
   color: var(--orange-color);
   top: 75px;
-  left: -75px;
+  left: -73px;
   font-family: var(--general-font);
   font-size: 16px;
   display: inline-block;
