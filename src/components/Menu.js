@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Fish from './Fish'
+import Header from './Header'
 
 class Menu extends Component {
   constructor(props) {
@@ -8,14 +9,7 @@ class Menu extends Component {
   }
   render() { 
     return <div className="menu has-scroll">
-        <div className="menu__header">
-          <h1>Catch</h1>
-          <span className="header__little">of the</span>
-          <h1>Day</h1>
-          <div className="header__subheader">
-            <h2>Fresh Seafood Market</h2>
-          </div>
-        </div>
+        <Header />
         <Fish />
       </div>;
   }
