@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { makeFunName } from '../util'
 
 class StorePicker extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class StorePicker extends Component {
   }
   render() { 
     return ( 
-      <p className="store-selector">I am the Store Picker</p>
+      <p className="store-selector">{makeFunName()}</p>
      );
   }
 }
