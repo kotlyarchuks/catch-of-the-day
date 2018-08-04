@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Menu from './components/Menu';
+import React, { Component } from "react";
+import Menu from "./components/Menu";
 import Order from "./components/Order";
 import Inventory from "./components/Inventory";
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="store flex">
         <Menu />
         <Order />
         <Inventory />
-      </React.Fragment>
+      </div>
     );
   }
 }
