@@ -47,10 +47,10 @@ export const makeFunName = () => {
     "Borborygm"
   ];
 
-  const randArrElem = arr => arr[Math.floor( Math.random()*arr.length )]
-  return randArrElem(adjectives) + '-' + randArrElem(nouns)
-    
-}
-  
+  const randArrElem = arr => arr[Math.floor(Math.random() * arr.length)];
+  return randArrElem(adjectives) + "-" + randArrElem(nouns);
+};
 
-
+export const slugify = str => {
+  return str.toLowerCase().replace(/\s/g, "-");
+};

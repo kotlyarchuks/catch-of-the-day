@@ -6,21 +6,23 @@ class Order extends Component {
     this.state = {};
   }
   render() {
-    return <div class="order has-scroll">
-        <h2 class="title">Your order</h2>
-        <div class="order__item flex">
-          <div class="order__name">1lbs Pacific Halibut</div>
-          <div class="order__price">$17.24</div>
+    return (
+      <div className="order has-scroll">
+        <h2 className="title">Your order</h2>
+        <div className="order__item flex">
+          <div className="order__name">1lbs Pacific Halibut</div>
+          <div className="order__price">$17.24</div>
         </div>
-        <div class="order__item flex">
-          <div class="order__name">1lbs Pacific Halibut</div>
-          <div class="order__price">$17.24</div>
+        <div className="order__item flex">
+          <div className="order__name">1lbs Pacific Halibut</div>
+          <div className="order__price">$17.24</div>
         </div>
-        <div class="order__total flex">
+        <div className="order__total flex">
           <div>Total</div>
           <div>$17.24</div>
         </div>
-      </div>;
+      </div>
+    );
   }
 }
 
