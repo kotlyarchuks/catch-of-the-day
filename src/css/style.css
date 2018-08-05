@@ -286,6 +286,7 @@ h3 {
 .inventory__item {
   box-sizing: content-box;
   font-size: 13px;
+  margin-bottom: 15px;
 }
 
 .bigger-border {
@@ -310,6 +311,13 @@ h3 {
 .inventory__price,
 .inventory__status {
   flex-grow: 1;
+}
+
+.inventory__status {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 9.5px;
 }
 
 .remove-fish {

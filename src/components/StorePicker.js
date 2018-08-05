@@ -12,7 +12,7 @@ class StorePicker extends Component {
   visitStore = e => {
     e.preventDefault();
     const target = slugify(this.storeInput.current.value);
-    window.location.href = `/store/${target}`;
+    this.props.history.push(`/store/${target}`);
   };
 
   render() {
