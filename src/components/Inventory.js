@@ -10,7 +10,7 @@ class Inventory extends Component {
     return (
       <div className="inventory has-scroll">
         <h2 className="title">Inventory</h2>
-        <AddFishForm />
+        <AddFishForm addFish={this.props.addFish} />
         <AddFishForm />
         <button className="btn">Load sample fishes</button>
       </div>
