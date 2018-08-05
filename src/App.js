@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Menu from "./components/Menu";
 import Order from "./components/Order";
 import Inventory from "./components/Inventory";
+import sampleFishes from "./sampleFishes";
 
 class App extends Component {
   state = {
@@ -15,12 +16,21 @@ class App extends Component {
     this.setState({ fishes });
   };
 
+  loadSampleFishes = () => {
+    this.setState({
+      fishes: sampleFishes
+    });
+  };
+
   render() {
     return (
       <div className="store flex">
         <Menu />
         <Order />
-        <Inventory addFish={this.addFish} />
+        <Inventory
+          addFish={this.addFish}
+          loadSampleFishes={this.loadSampleFishes}
+        />
       </div>
     );
   }
